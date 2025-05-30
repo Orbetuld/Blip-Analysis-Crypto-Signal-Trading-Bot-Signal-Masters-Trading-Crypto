@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="divData">
+    
+</div>
+
+@section Scripts{
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script>
+        $(() => {
+            let connection = new signalR.HubConnectionBuilder().withUrl("/SQLHub").build()
+            connection.start()
+            connection.on("RefreshData", function () {
+                UpdateUI();
+            })
+        })
+        UpdateUI();
+ 
+        function UpdateUI() {
+            const url = '/Home/GetCoins';
+            $.get(url).then(res => {
+                $("#divData").html(res);
+                $("#divData table").DataTable({
+                    "searching": false,
+                    "paging":   false,
+                    "ordering": false,
+                    "info":     false
+                });
+            });
+        }
+    </script>
+}
