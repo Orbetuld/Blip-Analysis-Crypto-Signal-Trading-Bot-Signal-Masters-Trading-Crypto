@@ -1,0 +1,20 @@
+﻿@model IEnumerable<RealTimeSQL.Models.TBL_Coin>
+<p>Last update: @ViewBag.Time</p>
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.slug)</th>
+            <th>@Html.DisplayNameFor(model => model.symbol)</th>
+            <th>@Html.DisplayNameFor(model => model.price_usd)</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.slug)</td>
+                <td>@Html.DisplayFor(modelItem => item.symbol)</td>
+                <td>@Html.DisplayFor(modelItem => item.price_usd)</td>
+            </tr>
+    }
+    </tbody>
+</table>
