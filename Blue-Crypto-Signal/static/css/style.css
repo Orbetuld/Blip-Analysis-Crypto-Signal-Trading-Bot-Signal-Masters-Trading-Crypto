@@ -1,0 +1,112 @@
+.image-container {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .hr-style::after {
+    content: "";
+    display: block;
+    width: 100px; /* Adjust the width of the line as needed */
+    height: 2px; /* Adjust the height of the line as needed */
+    background-color: #FFC500; /* Change the color to your desired color */
+    margin: 10px auto; /* Adjust the margin to position the line */
+  }
+
+/* Style the menu items for small screens */
+#menuItems {
+  display: none;
+  padding-top: 10px;
+  border-top: 1px solid white; /* Add a separator line between hamburger and links */
+}
+
+/* Show the menu items on medium-sized screens and above */
+@media (min-width: 768px) {
+  #menuItems {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      padding-top: 0;
+  }
+}
+
+/* Show the hamburger icon on small screens */
+@media (max-width: 767px) {
+  #menuBtn {
+      display: block;
+  }
+  #menuItems.active {
+      display: flex;
+      flex-direction: column;
+      background-color: #1c1c1c;
+  }
+}
+
+/* Add the following CSS to your existing styles or create a new CSS file */
+
+/* Style for the signals container */
+.signals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for the individual signal card */
+.signal-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set a desired width for the card */
+  /* You can customize other styles as per your design */
+}
+
+/* Style for the signal coin name */
+.signal-coin {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Style for the signal buy range */
+.signal-buy-range {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Style for the signal timestamp */
+.signal-timestamp {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+/* Style for the signal card on hover */
+.signal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
