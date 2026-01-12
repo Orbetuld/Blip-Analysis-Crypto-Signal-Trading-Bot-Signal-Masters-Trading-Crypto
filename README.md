@@ -16,7 +16,7 @@
 
 
  
-![unnamed](https://github.com/MuckPro/REDME/assets/138373919/95b187b2-af78-4c4f-87ca-2ad32d535c9d)
+![unnamed](https://github.com/MuckPro/README/assets/138373919/95b187b2-af78-4c4f-87ca-2ad32d535c9d)
 
 
 
@@ -34,7 +34,7 @@ Signal Masters, Our Cryptocurrency Signal Service is a cutting-edge platform tha
 
 ## Trading
 
-The project is aimed at developing an intelligent trading for automated trading cryptocurrencies using state-of-the-art machine learning (ML) algorithms and feature engineering. The project provides the following major functionalities:
+The project is aimed at developing an intelligent trading system for automated trading of cryptocurrencies using state-of-the-art machine learning (ML) algorithms and feature engineering. The project provides the following major functionalities:
 
 **Features:**
 
@@ -42,7 +42,7 @@ The project is aimed at developing an intelligent trading for automated trading 
 
 - Analyzing the predicted scores and choosing best signal parameters
 
-- Signaling service which is regularly requests new data from the exchange and generates buy-sell signals by applying the previously trained models in on-line mode
+- Signaling service which regularly requests new data from the exchange and generates buy-sell signals by applying the previously trained models in on-line mode
 
 - Trading service which does real trading by buying or selling the assets according to the generated signals
  
