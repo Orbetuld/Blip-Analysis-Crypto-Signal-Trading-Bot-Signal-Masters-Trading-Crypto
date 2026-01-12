@@ -70,7 +70,7 @@ Every minute, the signaler performs the following steps to make a prediction abo
 
 ## Contributing
 
-We welcome contributions from the community. To contribute to BlockchainBridge, please follow these steps:
+We welcome contributions from the community. To contribute to SignalMasters, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -78,7 +78,7 @@ We welcome contributions from the community. To contribute to BlockchainBridge, 
 4. Submit a pull request. 
 
 ---
-<h2> License </h2>
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
