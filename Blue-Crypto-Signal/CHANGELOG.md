@@ -1,4 +1,4 @@
-# Change Log
+# Changelog
 
 * v0.6.dev
   * move algorithm configurations from source code to configuration file algorithms section
